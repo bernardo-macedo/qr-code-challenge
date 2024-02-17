@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  /* Font */
+  --main-font: "Rubik", sans-serif;
+  /* Colors */
+  --primary-color: rgb(52, 55, 55);
+  --secondary-color: rgb(135, 137, 137);
+  /* Shadow */
+  --shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  /* Border radius */
+  --md-border-radius: 0.7rem;
+  --sm-border-radius: 0.35rem;
+  /* Margins */
+  --margin: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #d5e1ef;
+  padding-inline: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+.card {
+  background-color: rgb(255, 255, 255);
+  max-width: 270px;
+  padding: 1rem;
+  border-radius: var(--md-border-radius);
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.card > img {
+  max-width: 100%;
+  border-radius: var(--sm-border-radius);
+}
+
+.card > h3 {
+  font-family: var(--main-font);
+  color: var(--primary-color);
+}
+
+.card > p {
+  font-family: var(--main-font);
+  color: var(--secondary-color);
+}
+
+/* Margins */
+.margin-bot {
+  margin-bottom: var(--margin);
+}
+
+/* Attribution */
+.attribution {
+  font-family: var(--main-font);
+  font-size: 0.8rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+  color: hsl(228, 62%, 24%);
+}
